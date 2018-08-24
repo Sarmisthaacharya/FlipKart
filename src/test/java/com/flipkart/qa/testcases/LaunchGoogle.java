@@ -46,8 +46,8 @@ public class LaunchGoogle extends TestBase{
 		public void loginfunctionality()
 		{
 			
-			String title = loginpage1.validateTitle();
-			System.out.println(title);
+			String title1 = loginpage1.validateTitle();
+			System.out.println(title1);
 		log.info("test");
 		
 			
