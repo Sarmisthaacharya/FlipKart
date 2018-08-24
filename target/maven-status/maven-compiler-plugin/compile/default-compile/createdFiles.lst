@@ -1,0 +1,10 @@
+com\flipkart\qa\pages\LoginPage.class
+com\flipkart\qa\util\Screenshot.class
+com\flipkart\qa\util\HighLightBorder.class
+com\flipkart\qa\util\HighlightElement.class
+com\flipkart\qa\base\TestBase.class
+com\flipkart\qa\pages\LoginPageEA.class
+com\flipkart\qa\pages\SignUpPage.class
+com\flipkart\qa\util\GenerateExtentReport.class
+com\flipkart\qa\util\SendMail.class
+com\flipkart\qa\util\ExcelReader.class

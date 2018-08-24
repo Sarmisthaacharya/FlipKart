@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="10788" started-at="2018-08-24T19:00:37Z" finished-at="2018-08-24T19:00:48Z">
+    <groups>
+    </groups>
+    <test name="test" duration-ms="10788" started-at="2018-08-24T19:00:37Z" finished-at="2018-08-24T19:00:48Z">
+      <class name="com.flipkart.qa.testcases.LaunchGoogle">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.flipkart.qa.testcases.LaunchGoogle@1f36e637]" name="setUp" is-config="true" duration-ms="9662" started-at="2018-08-25T00:30:37Z" finished-at="2018-08-25T00:30:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.flipkart.qa.testcases.LaunchGoogle.loginfunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginfunctionality()[pri:0, instance:com.flipkart.qa.testcases.LaunchGoogle@1f36e637]" name="loginfunctionality" duration-ms="15" started-at="2018-08-25T00:30:47Z" finished-at="2018-08-25T00:30:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginfunctionality -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.flipkart.qa.testcases.LaunchGoogle@1f36e637]" name="tearDown" is-config="true" duration-ms="710" started-at="2018-08-25T00:30:47Z" finished-at="2018-08-25T00:30:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginfunctionality status=SUCCESS method=LaunchGoogle.loginfunctionality()[pri:0, instance:com.flipkart.qa.testcases.LaunchGoogle@1f36e637] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.flipkart.qa.testcases.LaunchGoogle@1f36e637]" name="endTest" is-config="true" duration-ms="368" started-at="2018-08-25T00:30:48Z" finished-at="2018-08-25T00:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.flipkart.qa.testcases.LaunchGoogle -->
+    </test> <!-- test -->
+  </suite> <!-- Suite -->
+</testng-results>

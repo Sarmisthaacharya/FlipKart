@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>TestNG:  test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 22 14:20:08 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>27 seconds (27664 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.flipkart.qa.testcases.LoginTestEA.tearDown()'><b>tearDown</b><br>Test class: com.flipkart.qa.testcases.LoginTestEA<br>Parameters: [TestResult name=loginfunctionality status=SUCCESS method=LoginTestEA.loginfunctionality()[pri:0, instance:com.flipkart.qa.testcases.LoginTestEA@2e3fc542] output={null}]</td>
+<td><div><pre>org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1242)
+	at org.apache.commons.mail.Email.send(Email.java:1267)
+	at com.flipkart.qa.util.SendMail.sendEMail(SendMail.java:22)
+	at com.flipkart.qa.base.TestBase.getresult(TestBase.java:116)
+	at com.flipkart.qa.testcases.LoginTestEA.tearDown(LoginTestEA.java:75)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.mail.AuthenticationFailedException
+	at javax.mail.Service.connect(Service.java:319)
+	at javax.mail.Service.connect(Service.java:169)
+	at javax.mail.Service.connect(Service.java:118)
+	at javax.mail.Transport.send0(Transport.java:188)
+	at javax.mail.Transport.send(Transport.java:118)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1232)
+	... 27 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2107832162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2107832162'><pre>org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.gmail.com:465
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1242)
+	at org.apache.commons.mail.Email.send(Email.java:1267)
+	at com.flipkart.qa.util.SendMail.sendEMail(SendMail.java:22)
+	at com.flipkart.qa.base.TestBase.getresult(TestBase.java:116)
+	at com.flipkart.qa.testcases.LoginTestEA.tearDown(LoginTestEA.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.mail.AuthenticationFailedException
+	at javax.mail.Service.connect(Service.java:319)
+	at javax.mail.Service.connect(Service.java:169)
+	at javax.mail.Service.connect(Service.java:118)
+	at javax.mail.Transport.send0(Transport.java:188)
+	at javax.mail.Transport.send(Transport.java:118)
+	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1232)
+	... 27 more
+</pre></div></td>
+<td>2</td>
+<td>com.flipkart.qa.testcases.LoginTestEA@2e3fc542</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.flipkart.qa.testcases.LoginTestEA.loginfunctionality()'><b>loginfunctionality</b><br>Test class: com.flipkart.qa.testcases.LoginTestEA</td>
+<td></td>
+<td>13</td>
+<td>com.flipkart.qa.testcases.LoginTestEA@2e3fc542</td></tr>
+</table><p>
+</body>
+</html>

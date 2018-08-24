@@ -1,0 +1,5 @@
+com\flipkart\qa\testcases\Defaultvalue.class
+com\flipkart\qa\testcases\LaunchGoogle.class
+com\flipkart\qa\testcases\LoginTestEA.class
+com\flipkart\qa\testcases\DropDownSelection.class
+com\flipkart\qa\testcases\TestSequence.class
